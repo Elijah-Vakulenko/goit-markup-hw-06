@@ -23,7 +23,7 @@
         <nav class="logo-menu">
           <a class="logo">Web<span class="web-logo">Studio</span></a>
           <button
-            class="burger-btn is-open"
+            class="burger-btn is-hidden"
             type="button"
             data-menu-button
             aria-expanded="false"
@@ -100,7 +100,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button data-open-modal class="button" type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -516,9 +518,9 @@
 
     <!-- BACKDROP & MODAL WINDOW -->
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <button type="button" class="close-button">
+        <button data-close-modal type="button" class="close-button">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -594,5 +596,25 @@
       </div>
     </div>
     <script src="./js/menu.js"></script>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Click to Backdrop");
+      }
+    </script>
   </body>
 </html>

@@ -134,6 +134,9 @@ input {
   display: block;
 }
 
+.menu-mobile.is-hidden {
+  display: none;
+}
 
 
 .menu {
