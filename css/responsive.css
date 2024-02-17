@@ -38,6 +38,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 p,
 h1,
 h2,
@@ -96,16 +100,6 @@ input {
   line-height: 1.17;
   font-weight: 700;
   margin-right: 140px;
-}
-.web-logo {
-  color: #2e2f42;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  letter-spacing: 0.03em;
-  line-height: 1.17;
-  font-weight: 700;
 }
 
 .burger-btn {
@@ -174,16 +168,6 @@ input {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current {
-  color: #404bbf;
-  position: relative;
-}
-
-
-.link:hover,
-.link:focus {
-  color: #404bbf;
-}
 
 .address {
   display: flex;
@@ -255,8 +239,9 @@ input {
   letter-spacing: 0.03em;
   line-height: 1.17;
   font-weight: 700;
-  margin-right: 76px;
+  margin-right: 120px;
 }
+
 .web-logo {
   color: #2e2f42;
   text-transform: uppercase;
@@ -270,9 +255,6 @@ input {
 .menu {
   display: flex;
   gap: 40px;
-}
-
-.menu-item {
 }
 
 .link {
@@ -311,10 +293,12 @@ input {
 
 .address {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+ gap: 12px;
 }
 
 .contacts {
+  display: block;
   font-style: normal;
   color: #434455;
   text-decoration: none;
@@ -325,6 +309,47 @@ input {
 .contacts:focus {
   color: #404bbf;
 }
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.contacts {
+  font-style: normal;
+  font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+  color: #434455;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+  @media screen and (min-width: 1158px) {
+
+    .logo {
+      margin-right: 76px;
+    }
+
+    .address {
+   gap: 40px;
+   flex-direction: row;
+  
+}
+
+.contacts {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+  }
 
 /* ----------1ST SECTION HERO---------- */
 
@@ -982,7 +1007,7 @@ footer .logo {
 
 .modal {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
