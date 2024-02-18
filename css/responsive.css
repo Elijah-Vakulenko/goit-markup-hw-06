@@ -115,14 +115,6 @@ input {
   border-radius: 50%;
 }
 
-/* .close-munu-btn.is-open .mob-menu {
-  display: block;
-}
-.close-munu-btn.is-hidden .mob-menu {
-display: none;
-} */
-
-
 .mob-link {
   display: block;
   color: #2e2f42;
