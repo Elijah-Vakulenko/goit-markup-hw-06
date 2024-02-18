@@ -26,8 +26,6 @@
   }
 }
 
-
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -80,6 +78,98 @@ input {
   font-family: inherit;
 }
 
+/* HEADER MOB MENU */
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  padding: 24px 24px 40px 16px;
+}
+
+.mob-menu.is-open {
+  display: flex;
+}
+
+.mob-menu.is-hidden {
+  display: none;
+}
+
+.close-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 24px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* .close-munu-btn.is-open .mob-menu {
+  display: block;
+}
+.close-munu-btn.is-hidden .mob-menu {
+display: none;
+} */
+
+
+.mob-link {
+  display: block;
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio {
+  color: #404bbf;
+}
+
+.mob-address {
+  margin-bottom: 48px;
+}
+
+.mob-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mob-contact-item {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel {
+  color: #404bbf;
+}
+
+.mobile-menu-soc-media-list {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+}
+
 /* ---HEADER--- */
 
 .header-container {
@@ -113,7 +203,6 @@ input {
 .menu-list {
   display: none;
 }
-
 
 .address {
   display: none;
@@ -1028,8 +1117,8 @@ footer .logo {
 
 .checkbox-form {
   margin-bottom: 24px;
-
 }
+
 .checkbox {
   margin-right: 16px;
   border-radius: 2px;
@@ -1040,6 +1129,7 @@ footer .logo {
 
 .custom-checkbox {
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -1047,7 +1137,6 @@ footer .logo {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1060,7 +1149,9 @@ footer .logo {
 }
 
 .privacy-label {
-  display: inline-block;
+  display: flex;
+gap: 8px;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
