@@ -290,7 +290,6 @@ input {
 }
 }
 
-
 @media screen and (min-width: 1158px) {
   .logo {
   margin-right: 76px;
@@ -468,7 +467,7 @@ width: 288px;
 }
 
 .service-item:not(:last-child) {
-    margin-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .service-title {
@@ -490,22 +489,22 @@ width: 288px;
 @media screen and (min-width: 768px) {
 
   .services-list {
-display: flex;
-flex-wrap: wrap;
-column-gap: 24px;
-row-gap: 72px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
+}
 
- .service-title {
-        text-align: left;
-    }
+  .service-title {
+  text-align: left;
+}
 
 .service-item {
   width: 356px;
 }
 
 .service-item:not(:last-child) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 }
 
@@ -530,7 +529,6 @@ row-gap: 72px;
   width: 264px;
   font-weight: 400;
 }
-
 
 .svg-card {
   display: flex;
@@ -635,9 +633,7 @@ row-gap: 72px;
 .person, .person:not(:last-child) {
   margin-bottom: 0;
 }
-
 }
-
 
 @media screen and (min-width: 1158px) {
   .person {
@@ -755,14 +751,13 @@ row-gap: 72px;
   margin-bottom: 72px;
 }
 
-
 footer .logo {
   color: #ffffff;
 }
 
 .web {
-   display: block;
-   text-align: center;
+  display: block;
+  text-align: center;
   margin-bottom: 16px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -771,7 +766,6 @@ footer .logo {
   letter-spacing: 0.03em;
   line-height: 1.17;
   text-transform: uppercase;
- 
 }
 
 .web span {
@@ -907,7 +901,7 @@ footer .logo {
 }
 
 .web {
-   text-align: left;
+  text-align: left;
 }
 }
 
@@ -932,13 +926,18 @@ footer .logo {
   margin-bottom: 0;
 }
 
+.footer-icons {
+  margin-bottom: 0;
+}
+
 .subscribe {
   margin-left: 80px;
+  margin-bottom: 0;
 }
 
   .footer-container {
   display: flex;
-   flex-wrap: nowrap;
+  flex-wrap: nowrap;
   justify-content: center;
   padding-left: 15px;
 }
@@ -1211,8 +1210,4 @@ gap: 8px;
 .input-modal {
 width: 360px;
 }
-}
-
-@media screen and (min-width: 1158px) {
-  
 }
