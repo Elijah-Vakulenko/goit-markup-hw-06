@@ -115,6 +115,12 @@ input {
   border-radius: 50%;
 }
 
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .mob-link {
   display: block;
   color: #2e2f42;
@@ -123,7 +129,6 @@ input {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -777,6 +782,10 @@ footer .logo {
   color: #f4f4fd;
 }
 
+.footer-icons {
+  margin-bottom: 72px;
+}
+
 .soc-media-title {
   margin-bottom: 16px;
   font-size: 16px;
@@ -791,7 +800,6 @@ footer .logo {
   display: flex;
   gap: 16px;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .icon-item {
@@ -992,7 +1000,7 @@ footer .logo {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover,
@@ -1190,8 +1198,9 @@ gap: 8px;
 
 @media screen and (min-width: 768px) {
 .modal {
-    top: 35%;
+    top: 50%;
     width: 408px;
+    padding: 72px 24px 24px 24px;
   }
 
 .textarea-modal {
@@ -1206,5 +1215,4 @@ width: 360px;
 
 @media screen and (min-width: 1158px) {
   
-
 }
